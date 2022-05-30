@@ -5,12 +5,12 @@
  */
 class Up
 {
-  private function get_headers()
+  private static function get_headers()
   {
     return getallheaders();
   }
 
-  private function get_target()
+  private static function get_target()
   {
     return self::get_headers()['X-Up-Target'] ?? 'body';
   }
